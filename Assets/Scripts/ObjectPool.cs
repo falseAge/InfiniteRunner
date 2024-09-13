@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Linq;
 using UnityEngine;
 
@@ -14,6 +15,18 @@ public class ObjectPool : MonoBehaviour
     {
         for (int i = 0; i < _capacity; i++){
             GameObject spawned = Instantiate(prefab, _container.transform);
+            spawned.SetActive(false);
+
+            _pool.Add(spawned);
+        }
+    }
+
+    protected void Initialize(GameObject[] prefabs)
+    {
+        for (int i = 0; i < _capacity; i++)
+        {
+            int randomIndex = Random.Range(0, prefabs.Length);
+            GameObject spawned = Instantiate(prefabs[randomIndex], _container.transform);
             spawned.SetActive(false);
 
             _pool.Add(spawned);
