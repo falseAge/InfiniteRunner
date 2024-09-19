@@ -1,4 +1,4 @@
-# Infinity Runner
+# Infinite Runner
 *Бесконечный аркадный 2D-раннер.*
 
 ## Фичи:
