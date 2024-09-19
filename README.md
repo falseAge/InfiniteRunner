@@ -1,7 +1,12 @@
-# InfiniteRunner 
+# Infinity Runner
+*Бесконечный аркадный 2D-раннер.*
 
-InfiniteRunner is an endless side-scroller runner where the main character has to dodge hordes of monsters
+## Фичи:
 
-Implemented: 3 lines of defense, up-and-down movement, random spawn of monsters, life system, parallax background
+Управление движением (WS)
 
-Toolkit: Unity, C#
+3 линии рандомного спавна трех видов монстров (+пул объектов)
+
+## Toolkit:
+
+C#, Unity
